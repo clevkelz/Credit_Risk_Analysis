@@ -38,7 +38,31 @@ The balanced accuracy, precision, and recall scores of the six machine learning 
 * The precision score is 0.01 for high-risk loans and 1.00 for low-risk loans.
 * The recall score is 0.63 for high-risk loans and 0.66 for low-risk loans.
 
-### 
+### Undersampling
+
+#### Balanced Accuracy Score
+
+![image](https://user-images.githubusercontent.com/106293233/193351961-e7170d66-2796-4aa6-aa91-cee0c83e474e.png)
+
+* The balanced accuracy score for the Undersampling Model is 0.64.
+
+#### Precision and Recall Scores
+
+![image](https://user-images.githubusercontent.com/106293233/193352149-0a4217e9-0bfb-455a-80c7-df47e719a066.png)
+
+* The precision score is 0.01 for high-risk loans and 1.00 for low-risk loans.
+* The recall score is 0.60 for high-risk loans and 0.43 for low-risk loans.
+
+### Combination (Over and Under) Sampling
+
+#### Balanced Accuracy Score
+
+
+
+
+
+
+
 
 
  
