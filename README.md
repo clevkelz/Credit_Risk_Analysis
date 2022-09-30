@@ -57,17 +57,57 @@ The balanced accuracy, precision, and recall scores of the six machine learning 
 
 #### Balanced Accuracy Score
 
+![image](https://user-images.githubusercontent.com/106293233/193352382-68308c69-f2a8-4c3e-9ea0-bd5a22d478d8.png)
 
+*	The balanced accuracy score for the Combination (Over and Under) Sampling Model is 0.64.
 
+#### Precision and Recall Scores
 
+![image](https://user-images.githubusercontent.com/106293233/193352514-c7ec5f9d-fee4-47d0-b1b7-c7964d770145.png)
 
+* The precision score is 0.01 for high-risk loans and 1.00 for low-risk loans.
+* The recall score is 0.70 for high-risk loans and 0.57 for low-risk loans.
 
+### Balanced Random Forest Classifier
 
+#### Balanced Accuracy Score
 
+![image](https://user-images.githubusercontent.com/106293233/193352779-263e0b16-d967-4d34-90d0-957ad9930a15.png)
 
- 
+* The balanced accuracy score for the Balanced Random Forest Classifier Model is 0.79.
 
+#### Precision and Recall Scores
 
+![image](https://user-images.githubusercontent.com/106293233/193352936-04028a47-5697-47c1-839d-9a13bf23bd37.png)
 
+* The precision score is 0.04 for high-risk loans and 1.00 for low-risk loans.
+* The recall score is 0.67 for high-risk loans and 0.91 for low-risk loans.
 
+### Easy Ensemble AdaBoost Classifier
 
+#### Balanced Accuracy Score
+
+![image](https://user-images.githubusercontent.com/106293233/193353122-9f18d62b-143c-4377-ad09-eea1a6a41208.png)
+
+* The balanced accuracy score for the Easy Ensemble AdaBoost Classifier Model is 0.93.
+
+#### Precision and Recall Scores
+
+![image](https://user-images.githubusercontent.com/106293233/193353310-2e5ce32a-b0a5-4236-9541-f76ee18aaeae.png)
+
+* The precision score is 0.07 for high-risk loans and 1.00 for low-risk loans.
+* The recall score is 0.91 for high-risk loans and 0.94 for low-risk loans.
+
+## Summary
+
+### Overview of Results
+
+Most of the models had accuracy scores around 65%.  The accuracy improved sharply for the Balanced Random Forest Classifier Model and was highest for Easy Ensemble AdaBoost Classifier Model.  The latter two models are ensemble methods, which use multiple learning algorithms to enhance models’ ability to predict patterns.  The other models use resampling methods which involve repeatedly taking samples from a subset of data called the training data, drawing conclusions from the data, predicting how that would extrapolate to the remaining data (the test data), and then comparing the projected results on the test data to the actual test data.
+
+The precision scores were very low for high-risk loans and high for low-risk loans.  The recall, or sensitivity scores, were around 60% for high-risk and low-risk loans for the non-ensemble methods.  The recall scores were generally much higher for the ensemble methods.
+
+The F1 score takes into account both the precision and recall scores.  Using this score can help balance precision and sensitivity when selecting a model.  The F1 scores are very low for all methods in attempting to identify which borrowers will likely default on their loans but there is a substantial increase in the score with the AdaBoost Classifier Model.
+
+### Recommended Method to Use
+
+Models to predict credit risk can be very helpful in quickly screening borrowers during the credit decision process.  These automated decisions can often allow financial institutions to offer credit at lower costs because of reduced overhead and can also result in more consistent credit decisions.  Although none of the models were very precise in predicting high-risk loans, the accuracy and sensitivity scores of the Easy Ensemble AdaBoost Classifier Model were high.  Therefore, this model is recommended for use. 
