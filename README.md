@@ -102,7 +102,7 @@ The balanced accuracy, precision, and recall scores of the six machine learning 
 
 ### Overview of Results
 
-Most of the models had accuracy scores around 65%.  The accuracy improved sharply for the Balanced Random Forest Classifier Model and was highest for Easy Ensemble AdaBoost Classifier Model.  The latter two models are ensemble methods, which use multiple learning algorithms to enhance models’ ability to predict patterns.  The other models use resampling methods which involve repeatedly taking samples from a subset of data called the training data, drawing conclusions from the data, predicting how that would extrapolate to the remaining data (the test data), and then comparing the projected results on the test data to the actual test data.
+Most of the models had accuracy scores around 65%.  The accuracy improved sharply for the Balanced Random Forest Classifier Model and was highest for Easy Ensemble AdaBoost Classifier Model.  The latter two models are ensemble methods, which use multiple learning algorithms to enhance models’ ability to predict patterns. 
 
 The precision scores were very low for high-risk loans and high for low-risk loans.  The recall, or sensitivity scores, were around 60% for high-risk and low-risk loans for the non-ensemble methods.  The recall scores were generally much higher for the ensemble methods.
 
